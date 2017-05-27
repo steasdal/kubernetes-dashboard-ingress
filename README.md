@@ -59,3 +59,12 @@ $ kubectl apply -f dashboard-ingress.yaml
 That ought to do it.  Your ingress should be in place and routing traffic from the dashboard URL that you specified 
 in the `dashboard-ingress.yaml` file to your Kubernetes dashboard *and* you should be prompted for a username and
 password when you try to hit it.
+
+### Tearing it down
+If you've got a hankerin' to tear down all that you've just created, the following commands ought to do it:
+
+```bash
+$ kubectl delete -f dashboard-ingress.yaml
+$ kubectl delete secret dashboard-auth-secret -n kube-system
+```
+
