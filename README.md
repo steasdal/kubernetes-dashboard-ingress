@@ -68,3 +68,9 @@ $ kubectl delete -f dashboard-ingress.yaml
 $ kubectl delete secret dashboard-auth-secret -n kube-system
 ```
 
+Assuming that you deployed the dashboard by following [these instructions](https://github.com/kubernetes/dashboard),
+you can delete the dashboard deployment like so:
+
+```bash
+$ kubectl delete -f https://git.io/kube-dashboard
+```
