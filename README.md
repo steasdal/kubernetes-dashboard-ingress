@@ -23,7 +23,7 @@ If you want to add additional usernames/passwords to the `auth` file, simply rer
 ```bash
 $ htpasswd auth <new username>
 New password: <new password>
-Re-type new password: <new password again.
+Re-type new password: <new password again.>
 Adding password for user <new username>
 ```
 
